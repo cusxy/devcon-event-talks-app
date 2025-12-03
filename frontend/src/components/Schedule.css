@@ -11,3 +11,10 @@
     color: #666;
     margin-top: 30px;
 }
+
+/* For tablet and mobile devices */
+@media (max-width: 768px) {
+    .schedule-container {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+}
