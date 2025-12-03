@@ -1,0 +1,75 @@
+.talk-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.talk-card:hover {
+    transform: translateY(-5px);
+}
+
+.talk-time {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+.talk-title {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.talk-speakers {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.talk-categories {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.talk-description {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #444;
+}
+
+.break-line {
+    grid-column: 1 / -1; /* Span across all columns in a grid */
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.break-line::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffc107;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.break-text {
+    background-color: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    color: #ffc107;
+    font-weight: bold;
+    font-style: italic;
+}
